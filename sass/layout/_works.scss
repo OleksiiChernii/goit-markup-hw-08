@@ -1,0 +1,128 @@
+.section-works {
+    
+    .button {
+        background-color: #F5F4FA;
+        font-family: inherit;
+            
+        font-weight: 500;
+        line-height: calc(26/16);
+        
+        padding: 6px 22px;
+            
+        color: var(--text-color);
+            
+        transition: color var(--animation),
+                    background-color var(--animation),
+                    box-shadow var(--animation);
+    }
+
+
+    .active,
+    .button:hover,
+    .button:focus {
+        color: var(--primary-white);
+        background-color: var(--accent);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
+                    0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.btn-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.works{
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        background-color: var(--primary-white);
+        border: 1px solid #eeeeee;
+        width: 370px;
+    
+        transition: box-shadow var(--animation);
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 18px;
+        text-align: left;
+        line-height: calc(36/18);
+        letter-spacing: .06em;
+        color: var(--text-color);
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: calc(30/16);
+        color: var(--primary-grey);
+    }
+
+    &__link {
+        display: inline-block;
+    
+        transition: box-shadow var(--animation);
+
+        &:hover,
+        &:focus {
+            box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                0px 1px 1px rgba(0, 0, 0, 0.12);
+
+            .overlay__description {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 4px;
+    }
+
+    &__thumb {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    &__description {
+        color: var(--primary-white);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(28/18);
+
+
+        background-color: rgba(33, 150, 243, 0.9);
+        padding: 63px 24px;
+
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transform: translateY(100%);
+
+        transition: transform var(--animation);
+    }
+}

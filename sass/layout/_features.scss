@@ -1,0 +1,34 @@
+.section-features{
+    &__title {
+            font-size: 14px;
+            text-align: left;
+            text-transform: uppercase;
+            line-height: calc(16.41/14);
+            margin-bottom: 10px;
+    }
+
+    &__thumb {
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__description {
+        line-height: calc(24/14);
+        color: var(--primary-grey);
+    }
+}
