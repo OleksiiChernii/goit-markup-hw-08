@@ -1,5 +1,6 @@
 .header{
     border-bottom: 1px solid #ececec;
+    position: relative;
 
     &__navigation {
         display: flex;
@@ -83,7 +84,6 @@
 }
 
 .site-nav .current,
-.logo span,
 .site-nav__link:hover,
 .site-nav__link:focus,
 .contact-nav__link:hover,
@@ -92,14 +92,18 @@
 }
 
 
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
-    color: var(--text-color);
+.logo__navigation {
+    margin-right: 94px;
+}
 
-    &.link {
-        margin-right: 94px;
+@media screen and(max-width: 480px) {
+    .site-nav__list, .contact-nav__list{
+        display: none;
+    }
+
+    .logo__navigation{
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }

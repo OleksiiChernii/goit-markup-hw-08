@@ -8,6 +8,13 @@
         align-items: baseline;
     }
 
+    @media screen and(max-width:480px) {
+        .container{
+            display: block;
+            text-align: center;
+        }
+    }
+
     .title{
         font-size: 14px;
         font-weight: 700;
@@ -15,6 +22,12 @@
         text-align: left;
         text-transform: uppercase;
         color: var(--primary-white);
+    }
+
+    @media screen and(max-width: 480px) {
+        .title{
+            text-align: center;
+        }
     }
 
     .logo.link {
@@ -114,6 +127,8 @@
         margin-left: 12px;
         padding: 10px 29px;
 
+        min-width: 200px;
+
         background-color: var(--accent);
 
         font-size: 16px;
@@ -136,4 +151,28 @@
 .button__icon {
     margin-left: 10px;
     fill: currentColor;
+}
+
+@media screen and(max-width: 480px){
+    .addresses, .join, .subscribe{
+        margin: 0;
+        text-align: center;
+    }
+
+    .addresses, .join{
+        margin-bottom: 60px;
+    }
+
+    .form-subscribe{
+        display: block;
+
+        &__input{
+            margin: 0;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__button{
+            margin: 0;
+        }
+    }
 }

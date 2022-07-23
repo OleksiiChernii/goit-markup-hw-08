@@ -20,6 +20,26 @@
     }
 }
 
+@media screen and(max-width: 480px) {
+    .section-team{
+        &__title{
+            margin-bottom: 30px;
+        }
+
+        &__list{
+            display: block;
+        }
+
+        .teammate{
+            width: 100%;
+        }
+
+        .teammate:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
+
 .teammate{
     &__title {
         font-weight: 500;

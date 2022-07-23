@@ -34,3 +34,22 @@
         fill: currentColor;
     }
 }
+
+
+@media screen and (max-width: 480px) {
+    .section-clients{
+        &__title{
+            margin-bottom: 30px;
+        }
+    }
+
+    .client{
+        &__list{
+            flex-wrap: wrap;
+        }
+
+        &__link{
+            width: 210px;
+        }
+    }
+}
