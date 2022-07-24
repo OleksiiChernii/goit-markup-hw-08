@@ -34,10 +34,14 @@
     .burger__close{
         opacity: 0;
         fill: currentColor;
+
+        transition: opacity var(--animation);
     }
 
     .burger.is-open .burger__menu{
         opacity: 0;
+
+        transition: opacity var(--animation);
     }
     .burger.is-open .burger__close{
         opacity: 1;
