@@ -6,10 +6,8 @@
     .container {
         display: flex;
         align-items: baseline;
-    }
 
-    @media screen and(max-width: 767px) {
-        .container{
+        @media screen and(max-width: 767px) {
             display: block;
             text-align: center;
         }

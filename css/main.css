@@ -93,7 +93,12 @@ img {
   width: 100vw;
   padding: 0 15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -969,9 +974,16 @@ img {
     display: block;
   }
   .section-team .teammate {
-    width: 450px;
+    width: 100%;
     margin: 0 auto;
   }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .section-team .teammate {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
   .section-team .teammate:not(:last-child) {
     margin-bottom: 30px;
   }

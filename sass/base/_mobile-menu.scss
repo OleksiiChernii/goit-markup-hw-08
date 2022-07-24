@@ -38,13 +38,15 @@
         transition: opacity var(--animation);
     }
 
-    .burger.is-open .burger__menu{
-        opacity: 0;
-
-        transition: opacity var(--animation);
-    }
-    .burger.is-open .burger__close{
-        opacity: 1;
+    .burger.is-open{ 
+        .burger__menu{
+            opacity: 0;
+            transition: opacity var(--animation);
+        }
+        
+        .burger__close{
+            opacity: 1;
+        }
     }
 
     .mobile-menu{
