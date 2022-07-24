@@ -765,8 +765,8 @@ img {
     display: block;
   }
   .form-subscribe__input {
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 450px;
     margin-bottom: 20px;
   }
   .form-subscribe__button {
