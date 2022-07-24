@@ -3,9 +3,17 @@
     top: 50%;
     left: 50%;
 
-    min-width: 528px;
-    min-height: 581px;
 
+
+    @media screen and(max-width: 767px){
+        width: 450px;
+        height: auto;
+    }
+
+    @media screen and(min-width: 1200px){
+        min-width: 528px;
+        min-height: 581px;
+    }
     transform: translate(-50%, -50%);
 
     background-color: var(--primary-white);
@@ -37,11 +45,6 @@
         &:focus {
             fill: var(--accent);
         }
-    }
-
-    @media screen and(max-width: 767px){
-        max-width: 450px;
-        margin: 0 auto;
     }
 }
 

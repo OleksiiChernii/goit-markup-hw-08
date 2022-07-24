@@ -157,6 +157,7 @@
     .addresses, .join, .subscribe{
         margin: 0;
         text-align: center;
+        width: 100%;
     }
 
     .addresses, .join{
@@ -168,7 +169,7 @@
 
         &__input{
             margin: 0 auto;
-            width: 450px;
+            width: 100%;
             margin-bottom: 20px;
         }
         &__button{

@@ -93,26 +93,39 @@ img {
   width: 100vw;
   padding: 0 15px;
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .container {
-    margin: 0 auto;
-    width: 1200px;
-    padding: 0 15px;
+    width: 480px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: var(--primary-white);
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 .modal__button {
   position: absolute;
@@ -138,12 +151,6 @@ img {
 }
 .modal__button:focus {
   fill: var(--accent);
-}
-@media screen and (max-width: 767px) {
-  .modal {
-    max-width: 450px;
-    margin: 0 auto;
-  }
 }
 
 .form-container {
@@ -500,7 +507,6 @@ img {
 }
 .header {
   border-bottom: 1px solid #ececec;
-  position: relative;
 }
 .header__navigation {
   display: -webkit-box;
@@ -509,6 +515,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .navigation {
@@ -757,6 +764,7 @@ img {
   .addresses, .join, .subscribe {
     margin: 0;
     text-align: center;
+    width: 100%;
   }
   .addresses, .join {
     margin-bottom: 60px;
@@ -766,7 +774,7 @@ img {
   }
   .form-subscribe__input {
     margin: 0 auto;
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
   }
   .form-subscribe__button {
@@ -868,7 +876,7 @@ img {
     display: block;
   }
   .section-features__item {
-    width: 450px;
+    width: 100%;
     margin: 0 auto;
   }
   .section-features__thumb {

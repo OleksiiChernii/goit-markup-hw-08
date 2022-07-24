@@ -1,10 +1,10 @@
 .header{
     border-bottom: 1px solid #ececec;
-    position: relative;
 
     &__navigation {
         display: flex;
         align-items: center;
+        position: relative;
     }
 }
 
