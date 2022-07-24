@@ -7,7 +7,7 @@
 
     @media screen and(max-width: 767px){
         width: 450px;
-        height: auto;
+        height: 609px;
     }
 
     @media screen and(min-width: 1200px){
@@ -42,7 +42,8 @@
 
         transition: fill var(--animation);
 
-        &:focus {
+        &:focus,
+        &:hover {
             fill: var(--accent);
         }
     }
@@ -163,7 +164,13 @@
     gap: 7px;
 
     &__agreement {
+        font-size: 14px;
         line-height: calc(24/14);
+
+        @media screen and(max-width: 767px){
+            font-size: 12px;
+            line-height: calc(14/12);
+        }
     }
 
     &__link {

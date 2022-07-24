@@ -118,7 +118,7 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     width: 450px;
-    height: auto;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -149,7 +149,7 @@ img {
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
-.modal__button:focus {
+.modal__button:focus, .modal__button:hover {
   fill: var(--accent);
 }
 
@@ -277,7 +277,14 @@ img {
   gap: 7px;
 }
 .form-checkbox__agreement {
+  font-size: 14px;
   line-height: 1.7142857143;
+}
+@media screen and (max-width: 767px) {
+  .form-checkbox__agreement {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 .form-checkbox__link {
   color: var(--accent);
