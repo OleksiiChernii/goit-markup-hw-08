@@ -31,20 +31,30 @@
 .btn-list {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
     text-align: center;
     margin-bottom: 50px;
-    justify-content: center;
+
+    @media screen and(max-width: 767px){
+        column-gap: 15px;
+        justify-content: left;
+        margin-bottom: 40px;
+    }
 }
 
-.btn-item:not(:last-child) {
-    margin-right: 8px;
-}
 
 .works{
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
+        @media screen and(max-width: 767px){
+            display: block;
+        }
     }
 
     &__item {
@@ -54,6 +64,15 @@
     
         transition: box-shadow var(--animation);
         display: inline-block;
+
+        @media screen and(max-width: 767px){
+            display: block;
+            width: 450px;
+            margin: 0 auto;
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
     }
 
     &__title {

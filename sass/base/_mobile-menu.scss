@@ -1,5 +1,5 @@
 
-@media screen and(max-width: 480px) {
+@media screen and(max-width: 767px) {
 
     .burger{
         border: none;
@@ -21,7 +21,9 @@
     }
 
     .burger:focus .burger__menu,
-    .burger:hover .burger__menu{
+    .burger:hover .burger__menu,
+    .burger:focus .burger__close,
+    .burger:hover .burger__close{
         color: var(--accent);
     }
 
@@ -31,6 +33,7 @@
 
     .burger__close{
         opacity: 0;
+        fill: currentColor;
     }
 
     .burger.is-open .burger__menu{
@@ -65,7 +68,7 @@
     .mobile-menu__nav__list{
         margin-bottom: auto;
     }
-    
+
     .mobile-menu__nav__link{
         font-size: 40px;
         font-weight: 500;
@@ -124,5 +127,12 @@
     .mobile-menu__social__item:not(:last-child) .mobile-menu__social__link{
         padding-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .mobile-menu,
+    .burger{
+        display: none;
     }
 }
