@@ -126,7 +126,7 @@ img {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    width: calc(100vw - 15px);
+    width: calc(100vw - 30px);
     height: auto;
   }
 }
