@@ -27,14 +27,15 @@
     &__list{
         display: flex;
         justify-content: center;
+        gap: 48px;
     }
 
     &__item {
         padding: 32px 0;
-    }
 
-    &__item:not(:last-child) {
-        margin-right: 48px;
+        @media screen and(max-width:1199px){
+            padding: 26px 0;
+        }
     }
 
     &__list .current {
@@ -62,10 +63,7 @@
     &__list{
         display: flex;
         align-items: center;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 50px;
+        gap: 50px;
     }
 
     &__link {
@@ -103,7 +101,28 @@
 
     .logo__navigation{
         margin: 0;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding: 16px 0;
+    }
+}
+
+@media screen and(min-width: 768px) and (max-width: 1199px) {
+    .logo__navigation{
+        margin: 0;
+        padding: 26px 0;
+    }
+
+    .navigation{
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .contact-nav__list{
+        margin-left: auto;
+        display: list-item;
+    }
+
+    .contact-nav__item:not(:last-child){
+        margin-bottom: 10px;
     }
 }

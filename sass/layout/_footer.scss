@@ -6,9 +6,16 @@
     .container {
         display: flex;
         align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
 
         @media screen and(max-width: 767px) {
             display: block;
+            text-align: center;
+        }
+
+        @media screen and(max-width: 1199px) and (min-width: 768px){
+            gap: 60px 165px;
             text-align: center;
         }
     }
@@ -22,7 +29,7 @@
         color: var(--primary-white);
     }
 
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 1199px) {
         .title{
             text-align: center;
         }
@@ -170,6 +177,28 @@
             width: 100%;
             margin-bottom: 20px;
         }
+        &__button{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and(max-width: 1199px) and (min-width: 768px){
+    .addresses, .join, .subscribe{
+        margin: 0;
+        text-align: center;
+    }
+
+    .form-subscribe{
+        display: block;
+
+        &__input{
+            margin: 0 auto;
+            display: block;
+            width: 450px;
+            margin-bottom: 20px;
+        }
+
         &__button{
             margin: 0;
         }

@@ -571,12 +571,15 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 48px;
 }
 .site-nav__item {
   padding: 32px 0;
 }
-.site-nav__item:not(:last-child) {
-  margin-right: 48px;
+@media screen and (max-width: 1199px) {
+  .site-nav__item {
+    padding: 26px 0;
+  }
 }
 .site-nav__list .current {
   position: relative;
@@ -603,9 +606,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.contact-nav__item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 .contact-nav__link {
   color: var(--primary-grey);
@@ -642,8 +643,29 @@ img {
   }
   .logo__navigation {
     margin: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo__navigation {
+    margin: 0;
+    padding: 26px 0;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 90px;
+  }
+  .contact-nav__list {
+    margin-left: auto;
+    display: list-item;
+  }
+  .contact-nav__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 .page-footer {
@@ -658,10 +680,21 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
   .page-footer .container {
     display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .page-footer .container {
+    gap: 60px 165px;
     text-align: center;
   }
 }
@@ -673,7 +706,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .page-footer .title {
     text-align: center;
   }
@@ -803,6 +836,24 @@ img {
   .form-subscribe__input {
     margin: 0 auto;
     width: 100%;
+    margin-bottom: 20px;
+  }
+  .form-subscribe__button {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .addresses, .join, .subscribe {
+    margin: 0;
+    text-align: center;
+  }
+  .form-subscribe {
+    display: block;
+  }
+  .form-subscribe__input {
+    margin: 0 auto;
+    display: block;
+    width: 450px;
     margin-bottom: 20px;
   }
   .form-subscribe__button {
