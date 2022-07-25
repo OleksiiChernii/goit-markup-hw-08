@@ -92,14 +92,9 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (max-width: 479) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 100vw;
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 480px) {
-  .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -338,15 +333,17 @@ img {
   border-color: var(--accent);
 }
 
-.section {
-  padding: 94px 0px;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding: 60px 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,6 +889,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 .section-features__item {
@@ -918,6 +917,14 @@ img {
   }
   .section-features__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .section-features__item {
+    width: 354px;
+  }
+  .section-features__thumb {
+    width: 100%;
   }
 }
 .section-about {
@@ -949,7 +956,7 @@ img {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-about {
     display: none;
   }
@@ -971,15 +978,18 @@ img {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .section-team__title {
   margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  .section-team__title {
-    margin-bottom: 30px;
-  }
   .section-team__list {
     display: block;
   }
@@ -1056,7 +1066,7 @@ img {
   fill: currentColor;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-clients__title {
     margin-bottom: 30px;
   }
@@ -1066,6 +1076,11 @@ img {
   }
   .client__link {
     width: 210px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .client__link {
+    width: 226px;
   }
 }
 .section-works .button {

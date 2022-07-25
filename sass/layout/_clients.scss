@@ -36,7 +36,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .section-clients{
         &__title{
             margin-bottom: 30px;
@@ -50,6 +50,11 @@
 
         &__link{
             width: 210px;
+
+            @media screen and(min-width: 768px){
+                width: 226px;
+            }
         }
     }
 }
+

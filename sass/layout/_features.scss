@@ -20,6 +20,7 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
     }
 
@@ -55,6 +56,19 @@
 
         &__item:not(:last-child){
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .section-features {
+
+        &__item{
+            width: 354px;
+        }
+
+        &__thumb{
+            width: 100%;
         }
     }
 }

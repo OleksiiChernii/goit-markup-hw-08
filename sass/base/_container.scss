@@ -2,12 +2,8 @@
     margin: 0 auto;
     padding: 0 15px;
     
-    @media screen and (max-width: 479) {
-        width: 100vw;
-    }
-
-    @media screen and (max-width: 767px) and (min-width: 480px){
-        width: 480px;
+    @media screen and (max-width: 767px){
+        max-width: 480px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
