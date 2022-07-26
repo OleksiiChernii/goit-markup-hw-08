@@ -8,7 +8,7 @@
         height: auto;
     }
 
-    @media screen and(max-width: 767px) and (min-width: 480px){
+    @media screen and(max-width: 1199px) and (min-width: 480px){
         width: 450px;
         height: 609px;
     }
@@ -177,7 +177,7 @@
         font-size: 14px;
         line-height: calc(24/14);
 
-        @media screen and(max-width: 767px){
+        @media screen and(max-width: 1199px){
             font-size: 12px;
             line-height: calc(14/12);
         }
