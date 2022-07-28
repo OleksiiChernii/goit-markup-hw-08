@@ -5,3 +5,9 @@ body {
     font-size: 14px;
     letter-spacing: .03em;
 }
+
+.no-scroll{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

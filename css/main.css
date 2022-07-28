@@ -30,6 +30,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.no-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -767,7 +773,7 @@ img {
           justify-content: center;
 }
 .form-subscribe__input {
-  min-width: 358px;
+  width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -904,6 +910,11 @@ img {
     width: 360px;
     font-size: 26px;
     line-height: 1.6153846154;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 360px) {
+  .section-order__title {
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
@@ -1120,7 +1131,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   color: var(--icons-color);
   border: 1px solid var(--icons-color);
@@ -1136,6 +1146,11 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .section-clients__title {
     margin-bottom: 30px;
@@ -1144,8 +1159,9 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .client__link {
-    width: 210px;
+  .client__item {
+    width: calc(50% - 15px);
+    min-width: 130px;
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 768px) {

@@ -68,6 +68,9 @@
 
         &__title {
             width: 360px;
+            @media screen and (max-width: 360px){
+                width: 100%;
+            }
             font-size: 26px;
             line-height: calc(42/26);
         }
