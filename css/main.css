@@ -1159,6 +1159,8 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+@media screen and (max-width: 1199px) and (max-width: 767px) {
   .client__item {
     width: calc(50% - 15px);
     min-width: 130px;
