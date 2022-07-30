@@ -136,6 +136,9 @@
         color: var(--primary-white);
         font-weight: 400;
         font-size: 18px;
+        @media screen and(max-width: 360px){
+            font-size: 14px;
+        }
         line-height: calc(28/18);
 
 
@@ -152,7 +155,7 @@
         display: flex;
         align-items: center;
 
-        transform: translateY(100%);
+        transform: translateY(101%);
 
         transition: transform var(--animation);
     }
