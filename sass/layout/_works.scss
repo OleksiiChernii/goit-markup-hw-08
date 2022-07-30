@@ -59,7 +59,6 @@
 
     &__item {
         width: 100%;
-        height: auto;
         background-color: var(--primary-white);
         border: 1px solid #eeeeee;
         
@@ -97,8 +96,7 @@
     }
 
     &__link {
-        display: inline-block;
-        width: 100%;
+        display: block;
     
         transition: box-shadow var(--animation);
 

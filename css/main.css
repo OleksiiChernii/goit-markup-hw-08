@@ -1259,7 +1259,6 @@ img {
 }
 .works__item {
   width: 100%;
-  height: auto;
   background-color: var(--primary-white);
   border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow var(--animation);
@@ -1299,8 +1298,7 @@ img {
   color: var(--primary-grey);
 }
 .works__link {
-  display: inline-block;
-  width: 100%;
+  display: block;
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);
