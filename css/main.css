@@ -1300,6 +1300,7 @@ img {
 }
 .works__link {
   display: inline-block;
+  width: 100%;
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);
